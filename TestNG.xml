@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SBIBanking">
+	
+	<listeners>
+			<listener class-name="com.sbiBanking.utilities.Reporting"/>
+	</listeners>
+	
+	<test name="TC_CheckLoginTest_01">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.sbiBanking.testcases.TC_CheckLoginTest_01"/>
+			<!--  class name="com.sbiBanking.testcases.TC_AssertTitleTest_02"/> --> 
+	</classes>	
+
+	</test>
+
+</suite>
